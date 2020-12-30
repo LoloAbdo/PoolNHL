@@ -1,12 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import SignIn from "./component/SignIn";
-import SignUp from "./component/SignUp";
-import NavBarLeft from "./component/NavBarLeft";
+import Drawer from "@material-ui/core/Drawer";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import { Divider, ListItemIcon, ListItemText } from "@material-ui/core";
+import ArrowForwardRoundedIcon from "@material-ui/icons/ArrowForwardRounded";
+import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
+import { Route, Switch } from "react-router-dom";
 function App() {
     return (
         <div className="App">
-            <NavBarLeft />
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
@@ -20,8 +23,6 @@ function App() {
                 >
                     Learn React
                 </a>
-                <SignIn />
-                <SignUp />
             </header>
         </div>
     );
