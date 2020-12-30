@@ -2,10 +2,11 @@ import logo from "./logo.svg";
 import "./App.css";
 import SignIn from "./component/SignIn";
 import SignUp from "./component/SignUp";
-
+import NavBarLeft from "./component/NavBarLeft";
 function App() {
     return (
         <div className="App">
+            <NavBarLeft />
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
