@@ -10,6 +10,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import HomeIcon from "@material-ui/icons/Home";
 import PersonAddIcon from "@material-ui/icons/PersonAdd";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
+import { withRouter } from "react-router-dom";
+
 //#region StyleMaterialUI
 const useStyles = makeStyles({
     drawer: {
@@ -18,19 +20,28 @@ const useStyles = makeStyles({
 });
 //#endregion
 
-const Drawer = () => {
+const Drawer = (props) => {
+    const history = props.history;
     const classes = useStyles();
     const itemsList = [
-        { text: "Home", icon: <HomeIcon /> },
-        { text: "Sign In", icon: <PermIdentityIcon /> },
-        { text: "Sign Up", icon: <PersonAddIcon /> },
+        { text: "Home", icon: <HomeIcon />, onClick: () => history.push("/") },
+        {
+            text: "Sign In",
+            icon: <PermIdentityIcon />,
+            onClick: () => history.push("/signin"),
+        },
+        {
+            text: "Sign Up",
+            icon: <PersonAddIcon />,
+            onClick: () => history.push("/signup"),
+        },
     ];
     return (
         <MUIDrawer variant="permanent" className={classes.drawer}>
             <List>
                 {itemsList.map((item, index) => {
                     return (
-                        <ListItem button key={item}>
+                        <ListItem button key={item} onClick={item.onClick}>
                             <ListItemIcon>{item.icon}</ListItemIcon>
                             <ListItemText primary={item.text} />
                         </ListItem>
@@ -41,4 +52,4 @@ const Drawer = () => {
     );
 };
 
-export default Drawer;
+export default withRouter(Drawer);
