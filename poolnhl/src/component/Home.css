@@ -1,0 +1,11 @@
+.form-container {
+    display: inline-block;
+    background-color: whitesmoke;
+    border: 1px solid;
+    padding: 15%;
+    margin: auto;
+    margin-top: 7%;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}

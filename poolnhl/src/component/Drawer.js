@@ -49,23 +49,21 @@ const Drawer = (props) => {
 
     const itemsList = [
         { text: "Home", icon: <HomeIcon />, onClick: () => history.push("/") },
-        {
-            text: "Sign In",
-            icon: <PermIdentityIcon />,
-            onClick: () => history.push("/signin"),
-        },
-        {
-            text: "Sign Up",
-            icon: <PersonAddIcon />,
-            onClick: () => history.push("/signup"),
-        },
+        // {
+        //     text: "Sign In",
+        //     icon: <PermIdentityIcon />,
+        //     onClick: () => history.push("/signin"),
+        // },
+        // {
+        //     text: "Sign Up",
+        //     icon: <PersonAddIcon />,
+        //     onClick: () => history.push("/signup"),
+        // },
     ];
     const handleDrawerOpen = () => {
-        console.log("open");
         setOpen(true);
     };
     const handleDrawerClose = () => {
-        console.log("close");
         setOpen(false);
     };
     return (
