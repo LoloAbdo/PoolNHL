@@ -9,14 +9,12 @@ import {
     ListItemIcon,
     Divider,
     IconButton,
-    AppBar,
-    Toolbar,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import HomeIcon from "@material-ui/icons/Home";
-import PersonAddIcon from "@material-ui/icons/PersonAdd";
+// import PersonAddIcon from "@material-ui/icons/PersonAdd";
 import MenuIcon from "@material-ui/icons/Menu";
-import PermIdentityIcon from "@material-ui/icons/PermIdentity";
+// import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import { withRouter } from "react-router-dom";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 //#endregion
@@ -50,16 +48,6 @@ const Drawer = (props) => {
 
     const itemsList = [
         { text: "Home", icon: <HomeIcon />, onClick: () => history.push("/") },
-        // {
-        //     text: "Sign In",
-        //     icon: <PermIdentityIcon />,
-        //     onClick: () => history.push("/signin"),
-        // },
-        // {
-        //     text: "Sign Up",
-        //     icon: <PersonAddIcon />,
-        //     onClick: () => history.push("/signup"),
-        // },
     ];
     const handleDrawerOpen = () => {
         setOpen(true);

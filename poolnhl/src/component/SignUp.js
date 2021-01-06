@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 
-class Signup extends Component {
-    state = {};
-    render() {
-        return <h1>Sign up</h1>;
-    }
-}
+const SignUp = () => {
+    return (
+        <div>
+            <h1>Signup</h1>
+        </div>
+    );
+};
 
-export default Signup;
+export default SignUp;
