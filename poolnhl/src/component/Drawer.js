@@ -29,17 +29,18 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         alignItems: "flex-end",
         justifyContent: "flex-end",
+        marginTop: theme.spacing(3),
     },
     menuButton: {
         marginRight: theme.spacing(1),
-        marginTop: theme.spacing(1),
+        marginTop: theme.spacing(3),
     },
     hide: {
         display: "none",
     },
     papers: {
-        background: "#5e5959",
-        color: "white",
+        background: "#f7f7f7",
+        color: "black",
     },
 }));
 

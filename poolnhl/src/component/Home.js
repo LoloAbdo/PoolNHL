@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
         color: "black",
     },
     formContainer: {
-        /* display: inline-block; */
         position: "relative",
         backgroundColor: "rgb(247, 247, 247)",
         border: "1px solid",
