@@ -1,8 +1,7 @@
 import "./App.css";
 import Drawer from "./component/Drawer";
 import Home from "./component/Home";
-import SignUp from "./component/SignUp";
-import SignIn from "./component/SignIn";
+import Patin from "./Patin.png";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -10,6 +9,10 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
     container: {
         display: "flex",
+    },
+    imgHome: {
+        position: "absolute",
+        backgroundImage: Patin,
     },
 });
 //#endregion
@@ -20,6 +23,7 @@ function App() {
         <Router>
             <div className="App">
                 <div className={classes.container}>
+                    <img src={Patin} className={classes.imgHome} />
                     <Drawer />
                     <Switch>
                         <Route exact path="/">

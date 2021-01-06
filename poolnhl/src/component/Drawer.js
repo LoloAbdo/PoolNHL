@@ -20,7 +20,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 //#endregion
 
 //#region StyleMaterialUI
-const drawerWidth = 200;
+const drawerWidth = 250;
 const useStyles = makeStyles((theme) => ({
     drawer: {
         width: drawerWidth,
@@ -36,6 +36,10 @@ const useStyles = makeStyles((theme) => ({
     },
     hide: {
         display: "none",
+    },
+    papers: {
+        background: "#5e5959",
+        color: "white",
     },
 }));
 
@@ -56,7 +60,7 @@ const Drawer = (props) => {
         setOpen(false);
     };
     return (
-        <div>
+        <div className={classes.drawer}>
             <IconButton
                 onClick={handleDrawerOpen}
                 edge="start"
@@ -68,7 +72,7 @@ const Drawer = (props) => {
                 variant="persistent"
                 anchor="left"
                 open={open}
-                className={classes.drawer}
+                classes={{ paper: classes.papers }}
             >
                 <div className={classes.drawerHeader}>
                     <IconButton onClick={handleDrawerClose}>
