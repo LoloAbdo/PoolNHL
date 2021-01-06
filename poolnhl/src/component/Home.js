@@ -16,7 +16,7 @@ class Home extends Component {
         const toRegisterPage = () => {
             this.setState({ loginPage: false });
         };
-        return (
+        return (                
             <div className="form-container">
                 {this.state.loginPage ? <SignIn /> : <SignUp />}
                 <Button onClick={toLoginPage}>Login</Button>

@@ -1,6 +1,6 @@
 .form-container {
     display: inline-block;
-    background-color: whitesmoke;
+    background-color: rgb(247, 247, 247);
     border: 1px solid;
     padding: 15%;
     margin: auto;
@@ -8,4 +8,9 @@
     border-radius: 6px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.body
+{
+background-color: rgb(73, 73, 73);
 }

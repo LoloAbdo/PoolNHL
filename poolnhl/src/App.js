@@ -25,12 +25,6 @@ function App() {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route path="/signup">
-                            <SignUp />
-                        </Route>
-                        <Route exact path="/signin">
-                            <SignIn />
-                        </Route>
                     </Switch>
                 </div>
             </div>
