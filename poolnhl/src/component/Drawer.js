@@ -12,9 +12,9 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import HomeIcon from "@material-ui/icons/Home";
-// import PersonAddIcon from "@material-ui/icons/PersonAdd";
+import AccessibilityIcon from "@material-ui/icons/Accessibility";
 import MenuIcon from "@material-ui/icons/Menu";
-// import PermIdentityIcon from "@material-ui/icons/PermIdentity";
+
 import { withRouter } from "react-router-dom";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 //#endregion
@@ -52,7 +52,16 @@ const Drawer = (props) => {
     const [open, setOpen] = React.useState(false);
 
     const itemsList = [
-        { text: "Home", icon: <HomeIcon />, onClick: () => history.push("/") },
+        {
+            text: "Home",
+            icon: <HomeIcon />,
+            onClick: () => history.push("/"),
+        },
+        {
+            text: "Players",
+            icon: <AccessibilityIcon />,
+            onClick: () => history.push("/Players"),
+        },
     ];
     const handleDrawerOpen = () => {
         setOpen(true);

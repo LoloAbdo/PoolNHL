@@ -40,11 +40,11 @@ const useStyles = makeStyles((theme) => ({
     formContainerSignUp: {
         marginRight: "50px",
         marginBottom: "1px",
-        position: "relative",
+        marginTop: "4%",
+        position: "absolute relative",
         backgroundColor: "rgb(247, 247, 247)",
         border: "1px solid",
         padding: "10%",
-        marginTop: "4%",
         borderRadius: "6px",
         boxShadow:
             "0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)",
